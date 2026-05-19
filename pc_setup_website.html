@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Setup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #241045, #050508 65%);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: auto;
+      border: 2px solid #b63cff;
+      border-radius: 24px;
+      padding: 40px;
+      background: rgba(5, 5, 15, 0.88);
+      box-shadow: 0 0 35px rgba(176, 60, 255, 0.35);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: clamp(42px, 8vw, 92px);
+      letter-spacing: 6px;
+      background: linear-gradient(90deg, #ffffff, #d066ff, #7b2cff);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 25px rgba(180, 80, 255, 0.5);
+    }
+
+    header p {
+      color: #d9c9ff;
+      letter-spacing: 5px;
+      margin-top: 12px;
+      font-size: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .cards {
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid rgba(191, 92, 255, 0.7);
+      border-radius: 16px;
+      padding: 24px;
+      background: linear-gradient(145deg, rgba(30, 20, 55, 0.9), rgba(8, 8, 18, 0.9));
+      box-shadow: inset 0 0 18px rgba(120, 50, 255, 0.08);
+    }
+
+    .card h2 {
+      font-size: 28px;
+      margin-bottom: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    ul {
+      padding-left: 22px;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    strong, .purple {
+      color: #d06cff;
+    }
+
+    .pc-image {
+      width: 100%;
+      min-height: 480px;
+      border-radius: 18px;
+      background:
+        linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+        url("pc-setup.png") center/contain no-repeat;
+      filter: drop-shadow(0 0 35px rgba(160, 55, 255, 0.55));
+    }
+
+    .why {
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    .why h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .badges {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .badge {
+      border: 1px solid rgba(191, 92, 255, 0.5);
+      border-radius: 14px;
+      padding: 16px;
+      background: rgba(120, 40, 220, 0.12);
+      font-weight: bold;
+      color: #eadcff;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .page {
+        padding: 24px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pc-image {
+        min-height: 320px;
+      }
+
+      .badges {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>PC SETUP</h1>
+      <p>POWERED FOR HIGH-END GAMING & STREAMING</p>
+    </header>
+
+    <section class="grid">
+      <div class="cards">
+        <div class="card">
+          <h2>System</h2>
+          <ul>
+            <li><strong>CPU:</strong> AMD Ryzen 9 7950X3D (16-Core)</li>
+            <li><strong>GPU:</strong> AMD Radeon RX 7900 XTX</li>
+            <li><strong>Mainboard:</strong> ASUS ROG STRIX B650E-F GAMING WIFI</li>
+            <li><strong>Speicher:</strong> 500GB NVMe SSD + 2TB NVMe SSD</li>
+            <li><strong>Netzteil:</strong> Corsair RM1000x (1000W, 80+ Gold)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Displays</h2>
+          <ul>
+            <li><strong>Main Monitor:</strong> Lenovo Legion Pro 34WD-10 (3440x1440 Ultrawide)</li>
+            <li><strong>Second Monitor:</strong> HP X32 (32 Zoll)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Peripherals</h2>
+          <ul>
+            <li><strong>Keyboard:</strong> RedThunder K95</li>
+            <li><strong>Mouse:</strong> Logitech G903</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Audio</h2>
+          <ul>
+            <li><strong>Headset:</strong> Razer BlackShark V2 HyperSpeed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pc-image" aria-label="PC Setup Bild"></div>
+    </section>
+
+    <section class="card why">
+      <h2>Warum dieses Setup?</h2>
+      <p>Optimiert für Performance, Qualität und Zuverlässigkeit.</p>
+      <div class="badges">
+        <div class="badge">High-End Performance</div>
+        <div class="badge">Gaming & Streaming</div>
+        <div class="badge">Ultrawide Immersion</div>
+        <div class="badge">Schnell & Zuverlässig</div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 PC Setup
+    </footer>
+  </main>
+</body>
+</html>
